@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="/popupstyle.css" />
     <link rel="stylesheet" href="/bootstrap.min.css"/>
     <title>
         LCA Student Portal
@@ -49,18 +50,39 @@
     <div class="important-links">
         <h2 style="padding-left: 10% ;">Important Links</h2>
         <hr style="align-content: inherit; width: 80%;">
-        <h4 style="padding-left: 15% ;">High School</h4>
-        <hr style="align-content: inherit; width: 70%;">
-        <p style="padding-left: 20%;">
-            <a href="https://outlook.office.com/">Email | Office.com</a>
+        <p style="padding-left: 15%;">
+            <a href="https://outlook.office.com/">Mylca Email</a>
             <br>
             <a href="https://lcabloomington.powerschool.com/">PowerSchool</a>
         </p>
-        <h4 style="padding-left: 15% ;">Middle School</h4>
-        <hr style="align-content: inherit; width: 70%;">
-        <p style="padding-left: 20%;">
-            <a href="https://lcabloomington.powerschool.com/">PowerSchool</a>
-        </p>
+        <h5 style="padding-left: 12%;">Office Apps</h5>
+        <p style="padding-left: 15%;">
+            <a href="ms-word://">Microsoft Word Desktop</a>
+            <br>
+            <a href="https://www.office.com/launch/word">Microsoft Word Online</a>
+            <h5 style="padding-left: 12%;">Office Apps</h5>
+            <p style="padding-left: 15%;">
+                <a href="ms-powerpoint://">Microsoft PowerPoint Desktop</a>
+                <br>
+                <a href="https://www.office.com/launch/powerpoint">Microsoft PowerPoint Online</a>
+            </p>
+            <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+                <span class="popuptext" id="myPopup">A Simple Popup!</span>
+              </div>
+              <script>
+              function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+              }
+              </script>
+              
+            </p>
+
+
+
+
+
+
     </div>
     <div class="calendar">
         <h2 style="padding-left: 10%;">Main Calendar</h2>
@@ -73,22 +95,23 @@
             good option.</noframes>
     </div>
 
-    <div style="background-color: #003c77; padding-bottom: 0%;">
+    <div style="background-color: #003c77; padding-bottom: 0%; padding-left: 10%;   ">
         <hr>
-        <p style="padding-left: 10%; font-weight: bold; color: aliceblue;">
-            Student Portal
-            <br>
-            <img height="70" src="https://mylca.info/wp-content/uploads/2017/04/LACWhite-01.png"
-                alt="Lighthouse Extended Logo" />
+        <p style=" font-weight: bold; color: aliceblue;">
+            <p style="color: #fdb913;">Student Portal
+                <br>
+                <img height="70" src="https://mylca.info/wp-content/uploads/2017/04/LACWhite-01.png"
+                    alt="Lighthouse Extended Logo" />
 
-            <p style="padding-left: 10%; color: aliceblue;">
+                <p style="color: aliceblue;">
+                    <br>
+                    Courtesy of <a href="https://github.com/simondanerd" style="color: #fdb913;">Lucas Burlingham</a>
+                    (C) 2020.
+                    <br>
+                    Images belong to their respective owners.
+                </p>
                 <br>
-                Courtesy of Lucas Burlingham (C) 2020.
-                <br>
-                Images belong to their respective owners.
             </p>
-            <br>
-            
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
