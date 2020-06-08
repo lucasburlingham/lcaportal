@@ -47,35 +47,39 @@
             </div>
         </div>
     </div>
-    <div class="important-links">
+    <div class="important-links" style="padding-bottom: 5%;">
         <h2 style="padding-left: 10% ;">Important Links</h2>
         <hr style="align-content: inherit; width: 80%;">
-        <p style="padding-left: 15%;">
-            <a href="https://outlook.office.com/">Mylca Email</a>
+        <p>
+            <h5 style="padding-left: 12%;">Informational</h5>
+            <a style="padding-left: 15%;" href="https://lcabloomington.powerschool.com/">PowerSchool</a>
+            <a href="https://mylca.info/" style="padding-left: 19.25%;">Mylca.info</a>
             <br>
-            <a href="https://lcabloomington.powerschool.com/">PowerSchool</a>
         </p>
         <h5 style="padding-left: 12%;">Office Apps</h5>
+        <p>
+            <a style="padding-left: 15%;" href="ms-word://">Microsoft Word Desktop</a>
+            <a href="https://www.office.com/launch/word" style="padding-left: 12%;">Microsoft Word Online</a>
+        </p>
         <p style="padding-left: 15%;">
-            <a href="ms-word://">Microsoft Word Desktop</a>
-            <br>
-            <a href="https://www.office.com/launch/word">Microsoft Word Online</a>
-            <h5 style="padding-left: 12%;">Office Apps</h5>
-            <p style="padding-left: 15%;">
-                <a href="ms-powerpoint://">Microsoft PowerPoint Desktop</a>
-                <br>
-                <a href="https://www.office.com/launch/powerpoint">Microsoft PowerPoint Online</a>
-            </p>
-            <div class="popup" onclick="popup()">Schoology
-                <span class="popuptext" id="myPopup">Replacing our beloved Microsoft Teams</span>
-            </div>
-            <script>
-                function popup() {
-                    var popup = document.getElementById("myPopup");
-                    popup.classList.toggle("show");
-                }
-            </script>
-
+            <a href="ms-powerpoint://">Microsoft PowerPoint Desktop</a>
+            <a href="https://www.office.com/launch/powerpoint" style="padding-left: 9.50%;">Microsoft PowerPoint
+                Online</a>
+        </p>
+        <p>
+            <a href="ms-excel://" style="padding-left: 15%;">Microsoft Excel Desktop</a>
+            <a href="https://www.office.com/launch/Excel" style="padding-left: 12%;">Microsoft Excel Online</a>
+        </p>
+        <p style="padding-left: 15%;">
+            <a href="https://mylca-my.sharepoint.com/">OneDrive (SharePoint)</a>
+        </p>
+        <br>
+        <h5 style="padding-left: 12%;">Communication</h5>
+        <div style="padding-left: 15%;">
+            <a href="#" data-content="Sadly, Microsoft Teams has been replaced." data-toggle="tooltip"
+                title="Microsoft Teams has been replaced.">Schoology</a>
+            <a href="https://outlook.office.com/" style="padding-left: 24.5%;">Mylca Email</a>
+        </div>
         </p>
     </div>
     <div class="calendar">
@@ -86,9 +90,9 @@
             src="https://calendar.google.com/calendar/b/4/embed?title=2018-2019%20Calendar&height=600&wkst=1&bgcolor=%23FFFFFF&src=f56h6etppnu5om4krki8bpsbfc%40group.calendar.google.com&color=%23BE6D00&src=dvm02bpalbddtmnf7vmmdn7aek%40group.calendar.google.com&color=%2329527A&ctz=America%2FNew_York"
             frameborder="0"></iframe>
         <noframes>To see the LCA Main Calendar, please switch to a web browser that allows iFrames. Google Chrome is a
-            good option.</noframes>
+            good option.
+        </noframes>
     </div>
-
     <div style="background-color: #003c77; padding-bottom: 0%; padding-left: 10%;   ">
         <hr>
         <p style=" font-weight: bold; color: aliceblue;">
@@ -96,7 +100,6 @@
                 <br>
                 <img height="70" src="https://mylca.info/wp-content/uploads/2017/04/LACWhite-01.png"
                     alt="Lighthouse Extended Logo" />
-
                 <p style="color: aliceblue;">
                     <br>
                     Courtesy of <a href="https://github.com/simondanerd" style="color: #fdb913;">Lucas Burlingham</a>
@@ -116,8 +119,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <noscript><i>Please turn on JavaScript to allow the full potential of the site. Some features may not work without
-            JavaScript.</i></noscript>
+            JavaScript.</i>
+    </noscript>
 </body>
 
 </html>
