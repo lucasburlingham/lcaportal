@@ -13,14 +13,6 @@ $(document).ready(function(){
         $('.overlay-bg, .overlay-content').hide(); //hide the overlay
     }
 
-    // timer if we want to show a popup after a few seconds.
-    //get rid of this if you don't want a popup to show up automatically
-    setTimeout(function() {
-        // Show popup3 after 2 seconds
-        showPopup(3);
-    }, 2000);
-
-
     // show popup when you click on the link
     $('.show-popup').click(function(event){
         event.preventDefault(); // disable normal link function so that it doesn't refresh the page

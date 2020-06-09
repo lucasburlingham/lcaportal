@@ -1,19 +1,9 @@
 * {
 	margin: 0;
 	padding: 0;
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-}
-
-body {
-	font-family: 'Helvetica Neue','Helvetica', Arial, sans-serif;
-}
-
-.main-content {
-	height: 800px;
-	width: 1000px;
-	margin: 0 auto;
 }
 
 .overlay-bg {
@@ -21,48 +11,43 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height:100%;
+	height: 100%;
 	width: 100%;
 	cursor: pointer;
-	z-index: 1000; /* high z-index */
-	background: #000; /* fallback */
-	background: rgba(0,0,0,0.75);
+	z-index: 1000;
+	background: #000;
+	background: rgba(0, 0, 0, 0.75);
 }
-	.overlay-content {
-		display: none;
-		background: #fff;
-		padding: 1%;
-		width: 40%;
-		position: absolute;
-		top: 15%;
-		left: 50%;
-		margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
-		cursor: default;
-		z-index: 10001;
-		border-radius: 4px;
-		box-shadow: 0 0 5px rgba(0,0,0,0.9);
-	}
 
-	.close-btn {
-		cursor: pointer;
-		border: 1px solid #333;
-		padding: 2% 5%;
-		background: #a9e7f9; /* fallback */
-		background: -moz-linear-gradient(top,  #a9e7f9 0%, #77d3ef 4%, #05abe0 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9e7f9), color-stop(4%,#77d3ef), color-stop(100%,#05abe0));
-		background: -webkit-linear-gradient(top,  #a9e7f9 0%,#77d3ef 4%,#05abe0 100%);
-		background: -o-linear-gradient(top,  #a9e7f9 0%,#77d3ef 4%,#05abe0 100%);
-		background: -ms-linear-gradient(top,  #a9e7f9 0%,#77d3ef 4%,#05abe0 100%);
-		background: linear-gradient(to bottom,  #a9e7f9 0%,#77d3ef 4%,#05abe0 100%);
-		border-radius: 4px;
-		box-shadow: 0 0 4px rgba(0,0,0,0.3);
-	}
-	.close-btn:hover {
-		background: #05abe0;
-	}
+.overlay-content {
+	display: none;
+	background: #fff;
+	padding: 1%;
+	width: 70%;
+	position: absolute;
+	top: 15%;
+	left: 35%;
+	margin: 20% -20% 0 -20%;
+	z-index: 10001;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
 
-/* media query for most mobile devices */
-@media only screen and (min-width: 0px) and (max-width: 480px){
+.close-btn {
+	border: 1px solid #333;
+	padding: 2% 5%;
+	background: #003c77;
+	border-radius: 2px;
+	color: #fdb913;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn:hover {
+	background: #fdb913;
+	color: #003c77;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
 
 	.overlay-content {
 		width: 96%;
@@ -70,6 +55,3 @@ body {
 		left: 0;
 	}
 }
-
-
-
