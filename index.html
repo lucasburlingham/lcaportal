@@ -3,8 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="https://simondanerd.github.io/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-
+    <link type="text/css" rel="stylesheet" href="overlaypopup.css" />
     <title>
         LCA Student Portal
     </title>
@@ -81,6 +80,31 @@
                 title="Microsoft Teams has been replaced.">Schoology</a>
             <a href="https://outlook.office.com/" style="padding-left: 24.5%;">Mylca Email</a>
         </div>
+
+
+        <div class="main-content">
+            <!-- Your Content Here -->
+            <p>Please <a class="show-popup" href="#" data-showpopup="1" >click here</a> to see the popup 1</p>
+            <p>Try <a class="show-popup" href="#" data-showpopup="2" >clicking here</a> to see the popup 2</p>
+            <p>Now try <a class="show-popup" href="#" data-showpopup="3" >clicking here</a> to see the popup 3</p>
+        </div>
+         
+        <div class="overlay-bg">
+        </div>
+        <div class="overlay-content popup1">
+            <p>Oh My! This is a popup!</p>
+            <button class="close-btn">Close</button>
+        </div>
+        <div class="overlay-content popup2">
+            <p>This is the content for Popup #2</p>
+            <button class="close-btn">Close</button>
+        </div>
+        <div class="overlay-content popup3">
+            <p>This is the content for Popup #3</p>
+            <button class="close-btn">Close</button>
+        </div>
+
+
         </p>
     </div>
     <div class="calendar">
@@ -120,13 +144,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
     <noscript><i>Please turn on JavaScript to allow the full potential of the site. Some features may not work without
             JavaScript.</i>
     </noscript>
