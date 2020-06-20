@@ -14,7 +14,7 @@
     <link rel="icon" href="https://mylca.info/wp-content/uploads/2017/05/LCASiteIcon.png" />
 </head>
 
-<body style="font-family: BlinkMacSystemFont, Roboto, Ubuntu, Cantarell, sans-serif;">
+<body style="font-family: Roboto, BlinkMacSystemFont, Ubuntu, Cantarell, sans-serif;">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#"> <img height="50px" width="50px"
                 src="https://mylca.info/wp-content/uploads/2017/05/LCASiteIcon.png" alt="Lighthouse Logo" /> Student
@@ -25,19 +25,23 @@
         </button>
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#" tabindex="1">Home<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-light" href="https://mylca.info/" tabindex="2"
+                        aria-disabled="true">Mylca.info</button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://mylca.info/" tabindex="2" aria-disabled="true">Mylca.info</a>
+                    <button class="nav-link btn btn-light" href="https://lcabloomington.powerschool.com" tabindex="3"
+                        aria-disabled="true">PowerSchool</button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://lcabloomington.powerschool.com" tabindex="3"
-                        aria-disabled="true">PowerSchool</a>
+                    <button class="nav-link btn btn-light" href="https://www.mylca.schoology.com/" tabindex="3"
+                        aria-disabled="true">Schoology</button>
                 </li>
             </ul>
         </div>
     </nav>
+
+
     <div class="welcome">
         <div class="jumbotron jumbotron-fluid" style="text-align: center; color: #003c77; background: #fdb913">
             <div class="container">
@@ -46,50 +50,107 @@
             </div>
         </div>
     </div>
+
+
     <div class="important-links" style="padding-bottom: 5%;">
         <h2 style="padding-left: 10% ;">Important Links</h2>
         <hr style="align-content: inherit; width: 80%;">
-        <p>
-            <h5 style="padding-left: 12%;">Informational</h5>
-            <a style="padding-left: 15%;" href="https://lcabloomington.powerschool.com/">PowerSchool</a>
-            <a target="_blank" href="https://mylca.info/" style="padding-left: 19.25%;">Mylca.info</a>
+
+        <div class="container" style="padding-left: 10%;">
+            <h5>Informational</h5>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-primary"
+                            href="https://lcabloomington.powerschool.com/">PowerSchool</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-primary" target="_blank"
+                            href="https://mylca.info/">Mylca.info</button>
+                    </div>
+
+                </div>
+            </div>
             <br>
-        </p>
-        <h5 style="padding-left: 12%;">Office Apps</h5>
-        <p>
-            <a style="padding-left: 15%;" href="ms-word://">Microsoft Word Desktop</a>
-            <a target="_blank" href="https://www.office.com/launch/word" style="padding-left: 12%;">Microsoft Word
-                Online</a>
-        </p>
-        <p style="padding-left: 15%;">
-            <a href="ms-powerpoint://">Microsoft PowerPoint Desktop</a>
-            <a target="_blank" href="https://www.office.com/launch/powerpoint" style="padding-left: 9.50%;">Microsoft
-                PowerPoint Online</a>
-        </p>
-        <p>
-            <a href="ms-excel://" style="padding-left: 15%;">Microsoft Excel Desktop</a>
-            <a target="_blank" href="https://www.office.com/launch/Excel" style="padding-left: 12%;">Microsoft Excel
-                Online</a>
-        </p>
-        <p style="padding-left: 15%;">
-            <a target="_blank" href="https://mylca-my.sharepoint.com/">OneDrive (SharePoint)</a>
-        </p>
-        <br>
-        <h5 style="padding-left: 12%;">Communication</h5>
-        <div style="padding-left: 15%;">
-            <a href="https://www.mylca.schoology.com/" style="padding-right: 12.25%;"
-                data-content="Sadly, Microsoft Teams has been replaced." data-toggle="tooltip"
-                title="Microsoft Teams has been replaced." target="_blank">Schoology</a>
-            <a href="https://outlook.office.com/" target="_blank" style="padding-left: 12.25%;">Mylca Email</a>
+
+            <h5>Office Apps</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-start">
+                        <button type="button" class="btn btn-outline-primary" href="ms-word://">Microsoft Word
+                            Desktop</button>
+                    </div>
+                    <div class="col align-self-auto">
+                        <button type="button" class="btn btn-outline-primary" target="_blank"
+                            href="https://www.office.com/launch/word">Microsoft Word Online</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col align-self-start">
+                        <button type="button" class="btn btn-outline-primary" href="ms-powerpoint://">Microsoft
+                            PowerPoint
+                            Desktop</button>
+                    </div>
+                    <div class="col align-self-auto">
+                        <button type="button" class="btn btn-outline-primary" target="_blank"
+                            href="https://www.office.com/launch/powerpoint">Microsoft PowerPoint Online</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col align-self-start">
+                        <button type="button" class="btn btn-outline-primary" href="ms-excel://">Microsoft Excel
+                            Desktop</button>
+                    </div>
+                    <div class="col align-self-auto">
+                        <button type="button" class="btn btn-outline-primary" target="_blank"
+                            href="https://www.office.com/launch/Excel">Microsoft Excel Online</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col align-self-start">
+                        <button type="button" class="btn btn-outline-primary" target="_blank"
+                            href="https://mylca-my.sharepoint.com/">OneDrive
+                            (SharePoint)</button>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <h5>Communication</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-start"><button type="button" class="btn btn-outline-primary"
+                            href="https://www.mylca.schoology.com/"
+                            data-content="Sadly, Microsoft Teams has been replaced." data-toggle="tooltip"
+                            title="Microsoft Teams has been replaced." target="_blank">Schoology</button>
+                    </div>
+                    <div class="col align-self-start">
+                        <button type="button" class="btn btn-outline-primary" href="https://outlook.office.com/"
+                            target="_blank">Mylca
+                            Email</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h5>COVID-19 News</h5>
+            <div class="col align-self-start">
+
+                <button data-showpopup="1" type="button" class="btn btn-outline-primary show-popup" width="90%">More
+                    COVID Information (PDF)</button>
+            </div>
         </div>
-        <br>
-        <h5 style="padding-left: 12%;">COVID-19 News</h5>
-        <div style="padding-left: 15%;">
-            <button data-showpopup="1" type="button" class="btn btn-link show-popup" width="90%">More COVID Information (PDF)</button>
-        </div>
+
+
+
+
         <div class="overlay-content popup1">
             <p>Press the <i>Close</i> button to close this popup, or press <kbd>ESC</kbd>.</p>
-            <iframe src="https://www.doe.in.gov/sites/default/files/news/june-5-class-document.pdf" height="100%"
+            <iframe src="https://www.doe.in.gov/sites/default/files/news/june-5-class-document.pdf" height="75%"
                 width="100%"></iframe>
             <br>
             <button class="close-btn">Close</button>
@@ -97,6 +158,14 @@
     </div>
     </p>
     </div>
+
+
+
+
+
+
+
+
     <div class="calendar">
         <h2 style="padding-left: 10%;">Main Calendar</h2>
         <hr style="align-content: inherit; width: 80%;">
