@@ -1,2 +1,0 @@
-# lcaportal
-LCA Student Portal
