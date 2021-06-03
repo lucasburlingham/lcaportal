@@ -34,5 +34,6 @@
             "type": "image/png"
         }
     ],
-    "url": "https://goofy-hawking-ad73e6.netlify.app"
+    "url": "https://goofy-hawking-ad73e6.netlify.app",
+    "manifestUrl": "https://goofy-hawking-ad73e6.netlify.app/manifest.json"
 }
