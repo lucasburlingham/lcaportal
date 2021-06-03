@@ -1,32 +1,38 @@
 {
-    "theme_color": "#fdb913",
-    "background_color": "#003d7a",
-    "display": "standalone",
-    "scope": "/",
-    "start_url": "/index.html",
-    "short_name": "LCA Portal",
+    "dir": "ltr",
+    "lang": "en",
     "name": "LCA Student Portal",
+    "short_name": "LCA Portal",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://goofy-hawking-ad73e6.netlify.app/",
+    "background_color": "#003d7a",
+    "theme_color": "transparent",
     "description": "Lighthouse Christian Academy Student Portal",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
     "icons": [
         {
-            "src": "/icon-192x192.png",
+            "src": "/images/LCA/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/icon-256x256.png",
+            "src": "/images/LCA/icon-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/icon-384x384.png",
+            "src": "/images/LCA/icon-384x384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "/icon-512x512.png",
+            "src": "/images/LCA/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ],
+    "url": "https://goofy-hawking-ad73e6.netlify.app"
 }
