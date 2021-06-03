@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>
         LCA Student Portal
     </title>
@@ -12,232 +13,131 @@
     <meta name="author" content="Lucas Burlingham" />
     <meta name="description" content="Lighthouse Christian Academy Student Portal">
     <link rel="icon" href="https://mylca.info/wp-content/uploads/2017/05/LCASiteIcon.png" />
-    <style>
-        a:hover {
-            color: aliceblue;
-            text-decoration: none;
-        }
+    <script src="https://kit.fontawesome.com/e7d17b128f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
 
-        a {
-            text-decoration: none;
-        }
-
-        img {
-            padding-right: 2%;
-        }
-
-        /*
-    * {
-        border: 1px solid red;
-    }
-    */
-    </style>
 </head>
 
+<body>
 
-<body style="font-family: Roboto, BlinkMacSystemFont, Ubuntu, Cantarell, sans-serif;">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="navbar-brand">
-            <img height="50" width="51" src="https://mylca.info/wp-content/uploads/2017/05/LCASiteIcon.png"
-                alt="Lighthouse Logo" />
-            Student Portal
-        </div>
-        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="my-nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a rel="noopener" href="https://mylca.info/" tabindex="1" target="_blank"
-                        style="color: #003c77;"><button class="nav-link btn"
-                            aria-disabled="true">Mylca.info</button></a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://lcabloomington.powerschool.com/" tabindex="2" target="_blank"
-                        style="color: #003c77;"><button class="nav-link btn"
-                            aria-disabled="true">PowerSchool</button></a>
-                </li>
-                <li class="nav-item">
-                    <a rel="noopener" href="https://mylca.schoology.com/" tabindex="3" target="_blank"
-                        style="color: #003c77;"><button class="nav-link btn" aria-disabled="true">Schoology</button></a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img height="50" width="51" src="https://mylca.info/wp-content/uploads/2017/05/LCASiteIcon.png" />
+                Student Portal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" alt="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link btn link" aria-disabled="true" href="https://mylca.info/" target="_blank"
+                            rel="noopener">Mylca.info</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="dropdown-toggle nav-link btn link" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Student Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" aria-disabled="true" href="https://mylca.schoology.com/"
+                                    target="_blank" rel="noopener" alt="Mylca.Schoology.com">
+                                    <img class="dropdown-image img-fluid"
+                                        src="/images/schoology/Schoology-logo-transparent.png" alt="Schoology Logo" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" aria-disabled="true"
+                                    href="https://lcabloomington.powerschool.com/" target="_blank" rel="noopener"
+                                    alt="LCABloomington.PowerSchool.com">
+                                    <img class="dropdown-image invert img-fluid"
+                                        src="/images/powerschool/PowerSchoolLogos_Horizontal-WH.png"
+                                        alt="PowerSchool Logo" />
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://login.microsoftonline.com/" alt="Office.com">
+                                    Office.com</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://codehs.com/login/" target="_blank" rel="noopener"
+                                    alt="CodeHS">
+                                    CodeHS.com</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="welcome">
-        <div class="jumbotron jumbotron-fluid" style="text-align: center; color: #003c77; background: #fdb913;	">
-            <div class="container">
-                <br>
-                <h1 style="font-size: 400%;">Welcome!</h1>
-                <h5>The place to find important links and information</h5>
-                <br>
-                <br>
-            </div>
+
+    <div class="my-5 theme-blue" id="entry">
+        <div class="container">
+            <h1 class="display-1" id="welcome_typeit">
+            </h1>
+            <h5>The place to find important links and information</h5>
+
         </div>
     </div>
-    <div class="important-links" style="padding-bottom: 5%;">
-        <h2 style="padding-left: 10% ;">Important Links</h2>
-        <hr style="align-content: inherit; width: 80%;">
 
-        <div class="container" style="padding-left: 10%;">
-            <h5>Informational</h5>
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <a rel="noopener" href="https://lcabloomington.powerschool.com/" target="_blank"><button
-                                type="button" class="btn btn-outline-primary">PowerSchool</button></a>
-                    </div>
-                    <div class="col">
-
-                        <a rel="noopener" href="https://mylca.info/" target="_blank"><button type="button"
-                                class="btn btn-outline-primary">Mylca.info</button></a>
-                    </div>
-
-                </div>
-            </div>
-            <br>
-            <h5>Office Apps</h5>
-            <div class="container">
-                <div class="row">
-                    <div class="col align-self-start">
-                        <a rel="noopener" href="ms-word://" target="_blank"><button type="button"
-                                class="btn btn-outline-primary">Microsoft Word Desktop</button></a>
-                    </div>
-                    <div class="col align-self-auto">
-                        <a rel="noopener" href="https://www.office.com/launch/word" target="_blank"><button
-                                type="button" class="btn btn-outline-primary">Microsoft Word
-                                Online</button></a>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col align-self-start">
-                        <a rel="noopener" href="ms-powerpoint://" target="_blank"><button type="button"
-                                class="btn btn-outline-danger">Microsoft PowerPoint Desktop</button></a>
-                    </div>
-                    <div class="col align-self-auto">
-                        <a rel="noopener" href="https://www.office.com/launch/powerpoint" target="_blank"><button
-                                type="button" class="btn btn-outline-danger">Microsoft PowerPoint
-                                Online</button></a>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col align-self-start">
-                        <a rel="noopener" href="ms-excel://" target="_blank"><button type="button"
-                                class="btn btn-outline-success">Microsoft Excel Desktop</button></a>
-                    </div>
-                    <div class="col align-self-auto">
-                        <a rel="noopener" href="https://www.office.com/launch/excel" target="_blank"><button
-                                type="button" class="btn btn-outline-success">Microsoft Excel
-                                Online</button></a>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col align-self-start">
-                        <a rel="noopener" href="https://mylca-my.sharepoint.com/" target="_blank"><button type="button"
-                                class="btn btn-outline-primary">OneDrive (SharePoint)</button></a>
-                    </div>
-                </div>
-                <br>
-            </div>
-            <h5>Communication</h5>
-            <div class="container">
-                <div class="row">
-                    <div class="col align-self-start">
-                        <a href="https://www.mylca.schoology.com/" target="_blank">
-                            <button type="button" class="btn btn-outline-primary"
-                                data-content="Sadly, Microsoft Teams has been replaced." data-toggle="tooltip"
-                                title="Microsoft Teams has been replaced.">Schoology</button>
-                        </a>
-                    </div>
-                    <div class="col align-self-start">
-                        <a rel="noopener" href="https://outlook.office.com/" target="_blank">
-                            <button type="button" class="btn btn-outline-primary">Mylca Email</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <h5>COVID-19 News</h5>
-            <a href="https://www.doe.in.gov/sites/default/files/news/june-5-class-document.pdf" target="_blank">
-                <div class="col align-self-start">
-                    <button type="button" class="btn btn-outline-primary">More COVID
-                        Information (PDF)</button>
-                </div>
-            </a>
-            <br>
-        </div>
-    </div>
-    <h2 style="padding-left: 10%;">Main Calendar</h2>
-    <hr style="width: 80%;">
-    <div class="container">
-        <div class="row align-content-center">
-            <div class="col align-content-center">
-                <iframe frameborder="0" width="100%" height="600"
-                    src="https://calendar.google.com/calendar/b/4/embed?title=2020-2021%20Calendar&height=600&wkst=1&bgcolor=%23FFFFFF&src=f56h6etppnu5om4krki8bpsbfc%40group.calendar.google.com&color=%23BE6D00&src=dvm02bpalbddtmnf7vmmdn7aek%40group.calendar.google.com&color=%2329527A&ctz=America%2FNew_York">
-                </iframe>
-                <noframes>
-                    <!-- I know that this feature is depreciated, but really, if a browser doesn't have JS, then it supports this tag.-->
-                    <i>To see the LCA Main Calendar, please switch to a web browser that supports iFrames. You
-                        can also check your browser's settings. <br>Google Chrome is a good, free option. </i>
-                </noframes>
-            </div>
-        </div>
-        <noscript><i>Please turn on JavaScript to allow the full potential of the site. Some features may not work
-                without
-                JavaScript.</i>
-        </noscript>
-        <br>
-    </div>
-    <footer class="pt-4 border-top" style="background-color: #003c77; ">
+    <footer class="pt-4 border-top theme-background-blue">
         <div class="container">
             <div class="row h-100">
                 <div class="col align-self-start">
-                    <h5 style="color: #fdb913;">
+                    <h5 class="theme-yellow">
                         Student Portal
                     </h5>
                     <img class="align-self-start" src="https://mylca.info/wp-content/uploads/2017/04/LACWhite-01.png"
                         alt="White LCA Site Icon" height="70">
-                    <small class="d-block text-muted">&copy; 2020 Lucas Burlingham</small>
-                    <br>
-                    <br>
+                    <small class="d-block text-muted">&copy; 2020-2021 Lucas Burlingham</small>
                 </div>
                 <div class="col">
-                    <h5 style="color: #fdb913;">Lighthouse Christian Academy</h5>
+                    <h5 class="theme-yellow">Lighthouse Christian Academy</h5>
                     <address>
-                        <a rel="noopener" href="https://goo.gl/maps/gX3LFpk49DBjPT7g7" target="blank"
-                            style="color: aliceblue;">1201 That Road<br>
+                        <a class="text-white" rel="noopener"
+                            href="https://www.google.com/maps/place/Lighthouse+Christian+Academy/@39.1139289,-86.5476161,17z/data=!3m1!4b1!4m5!3m4!1s0x886c67ce0e4c741b:0x988f3ca8decb1fae!8m2!3d39.1139289!4d-86.5454274?shorturl=1"
+                            target="_blank">1201 That Road<br>
                             Bloomington
-                            Indiana <br>47403</a>
+                            Indiana <br>
+                            47403</a>
                     </address>
                 </div>
                 <div class="col">
                     <br>
                     <address class="text-light">
-                        <b>Principal:</b> Joyce Huck
+                        <b>Head of School:</b> James Spiegel
                         <br>
-                        <b>Vice-Principal:</b> Dewayne Pinkney
+                        <b>Principal:</b> Sandy Scherschel
+                        <br>
+                        <b>Interim-Principal:</b> Dewayne Pinkney
                     </address>
                 </div>
             </div>
+            <p class="pl-5 my-0 mx-auto text-light theme-background-blue">
+                All images belong to their respective owners.
+            </p>
         </div>
-        <p class="pl-5 text-light" style="background-color: #003c77; margin-bottom: 0px;">All images belong to their
-            respective owners.
-        </p>
+
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script type="module" src="/typeit.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.0.2/typeit.min.js"></script>
 </body>
 
 </html>
