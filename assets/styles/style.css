@@ -66,3 +66,6 @@ address > a {
   background-repeat: no-repeat;
   background-position: top;
 }
+.rounded-md {
+  border-radius: 6px;
+}
