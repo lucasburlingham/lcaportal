@@ -5,7 +5,7 @@
     "short_name": "LCA Portal",
     "scope": "/",
     "display": "standalone",
-    "start_url": "https://goofy-hawking-ad73e6.netlify.app/index.html",
+    "start_url": "https://goofy-hawking-ad73e6.netlify.app/",
     "background_color": "#fdb913",
     "theme_color": "#003c77",
     "description": "Lighthouse Christian Academy Student Portal",
