@@ -1,0 +1,2 @@
+# lcaportal
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/99e6af906e6d45d28e6382da4fac85ad)](https://app.codacy.com/gh/lucasburlingham/lcaportal?utm_source=github.com&utm_medium=referral&utm_content=lucasburlingham/lcaportal&utm_campaign=Badge_Grade_Settings)
