@@ -85,16 +85,118 @@
             </div>
         </div>
     </nav>
-    <div class="my-5 theme-blue" id="entry">
+    <div class="mt-5 theme-blue" id="entry">
         <div class="container">
-            <h1 class="display-1" id="welcome_typeit">
+            <h1 class="display-1" id="welcome_typeit" alt="Welcome Students!">
             </h1>
             <h5>The place to find important links and information</h5>
-
         </div>
     </div>
-
-    <footer class="pt-4 border-top theme-background-blue">
+    <div id="links">
+        <div class="theme-background-yellow py-3" id="links">
+            <h5 class="display-7 mx-4 text-white">Links</h5>
+            <div class="container rounded-3 bg-white shadow p-5">
+                <div id="office-apps">
+                    <h5 class="display-7">Office Apps</h5>
+                    <div class="row">
+                        <div class="col pt-sm-5">
+                            <a rel="noopener" href="https://www.office.com/launch/word" target="_blank"><button
+                                    type="button" class="btn btn-outline-primary">Microsoft Word
+                                    Online</button>
+                            </a>
+                        </div>
+                        <div class="col pt-sm-5">
+                            <a rel="noopener" href="https://www.office.com/launch/powerpoint" target="_blank">
+                                <button type="button" class="btn btn-outline-danger">Microsoft PowerPoint
+                                    Online</button>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-xs-block d-md-none p-2"></div>
+                        <div class="col pt-sm-5">
+                            <a rel="noopener" href="https://www.office.com/launch/excel" target="_blank">
+                                <button type="button" class="btn btn-outline-success">Microsoft Excel
+                                    Online</button>
+                            </a>
+                        </div>
+                        <div class="col pt-sm-5">
+                            <a rel="noopener" href="https://mylca-my.sharepoint.com/" target="_blank">
+                                <button type="button" class="btn btn-outline-primary">OneDrive (SharePoint)</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="google-apps">
+                    <h5 class="display-7 pt-5">Google Apps</h5>
+                    <div class="row">
+                        <div class="col pt-sm-5">
+                            <a rel="noopener" href="https://docs.google.com/document/u/0/" target="_blank"><button
+                                    type="button" class="btn btn-outline-primary">Google Docs</button>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="col pt-sm-5">
+                            <a rel="noopener" href="https://docs.google.com/presentation/u/0/" target="_blank">
+                                <button type="button" class="btn btn-outline-warning">Google Slides</button>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-xs-block d-md-none p-2"></div>
+                        <div class="col pt-sm-5">
+                            <a rel="noopener" href="https://docs.google.com/spreadsheets/u/0/" target="_blank">
+                                <button type="button" class="btn btn-outline-success">Google Sheets</button>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="col pt-sm-5">
+                            <a rel="noopener" href="https://drive.google.com/drive/my-drive" target="_blank">
+                                <button type="button" class="btn btn-outline-primary">Google Drive</button>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div id="communication">
+                    <h5 class="display-7 pt-5">Communication</h5>
+                    <div class="row">
+                        <div class="col align-self-start">
+                            <a href="https://www.mylca.schoology.com/" target="_blank">
+                                <button type="button" class="btn btn-outline-primary shadow"
+                                    data-content="Sadly, Microsoft Teams has been replaced." data-toggle="tooltip"
+                                    title="Microsoft Teams has been replaced.">Schoology</button>
+                            </a>
+                        </div>
+                        <div class="col align-self-start">
+                            <a rel="noopener" href="https://outlook.office.com/" target="_blank">
+                                <button type="button" class="btn btn-outline-primary shadow">Mylca Email</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="calendar" class="d-none d-md-block">
+        <div class="container-fluid wave-background-down">
+            <h5 class="display-7 text-light mx-auto pt-3">Main Calendar</h5>
+            <div class="row">
+                <div class="col-md-1 col-lg-2"></div>
+                <div class="col-10 col-sm-12 col-md-10 col-lg-8">
+                    <iframe id="open-web-calendar" class="shadow-lg rounded-md"
+                        style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;"
+                        src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2Fdvm02bpalbddtmnf7vmmdn7aek%2540group.calendar.google.com%2Fpublic%2Fbasic.ics&amp;css=.dhx_cal_navline%2C%20.dhx_scale_bar%2C%20.dhx_cal_container%2C%20.dhx_cal_header%20%7Bbackground-color%3A%20%23fdb913%3B%7D%0A.event%2C%20.dhx_cal_tab.active%2C%20.dhx_cal_tab.active%3Ahover%20%7Bbackground-color%3A%20%23003c77%3B%7D%20.dhx_month_head%2C%20.dhx_cal_tab%2C%20.dhx_cal_today_button%20%7Bcolor%3A%20%23003c77%3B%7D%20.dhx_cal_tab%2C%20.dhx_cal_tab.active%20%7Bborder-color%3A%20%23003c77%3B%7D%0A.dhx_scale_holder_now%2C%20.dhx_now%20.dhx_month_head%2C%20.dhx_now%20.dhx_month_body%20%7B%20background-color%3A%20lightgrey%3B%7D%0A"
+                        sandbox="allow-scripts allow-same-origin allow-top-navigation" allowTransparency="true"
+                        scrolling="no" frameborder="0" height="600px" width="100%"></iframe>
+                    <noframes>
+                        <!-- I know that this feature is depreciated, but really, if a browser doesn't have iframe support, then it supports this tag.-->
+                        <i>To see the LCA Main Calendar, please switch to a web browser that supports iFrames. You
+                            can also check your browser's settings. <br>Google Chrome is a good, free option. </i>
+                    </noframes>
+                </div>
+                <div class="col-md-1 col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="py-4 "></div>
+    <footer class="mt-4 py-3 border-top theme-background-blue">
         <div class="container">
             <div class="row h-100">
                 <div class="col align-self-start">
@@ -102,7 +204,7 @@
                         Student Portal
                     </h5>
                     <img class="align-self-start" src="https://mylca.info/wp-content/uploads/2017/04/LACWhite-01.png"
-                        alt="White LCA Site Icon" height="70">
+                        alt="White LCA Site Icon" height="70px">
                     <small class="d-block text-muted">&copy; 2020-2021 Lucas Burlingham</small>
                 </div>
                 <div class="col">
@@ -127,11 +229,22 @@
                     </address>
                 </div>
             </div>
-            <p class="pl-5 my-0 mx-auto text-light theme-background-blue">
-                All images belong to their respective owners.
-            </p>
         </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="text-light theme-background-blue bold">
+                    Contact:
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mx-auto set-width">
+            <div class="text-light theme-background-blue">
+                All images belong to their respective owners.
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
@@ -139,6 +252,7 @@
     <script type="module" src="/typeit.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.0.2/typeit.min.js"></script>
     <script src="/sw.js" async defer></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
