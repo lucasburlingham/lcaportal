@@ -65,3 +65,7 @@ address > a {
 .rounded-md {
   border-radius: 6px;
 }
+#current-news {
+  color: #003c77;
+  font-size: 20px;
+}

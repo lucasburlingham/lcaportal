@@ -28,4 +28,4 @@ try {
     window.attachEvent("onload", $buo_f);
 }
 
-$("#current-news").webTicker();
+
